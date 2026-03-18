@@ -18,7 +18,7 @@ it is not possible add new sales presentatve "SR04" data to the table unless the
 if customer named "Priya Sharma" want to change their city from Delhi to Hyderabad. <br>
 the existing city name need to be change in multiple rows.
 to understand to refer column "customer_city", row - (2, 5, 21)  
-forgetting to update any one row cause data inconsistency.
+forgetting to update any one row can cause data inconsistency.
 
 ### Deletion Anamoly:
 refer row - 16  
