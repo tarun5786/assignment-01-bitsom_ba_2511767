@@ -17,7 +17,8 @@ it is not possible add new sales presentatve "SR04" data to the table unless the
 ### Updation Anamoly:
 if customer named "Priya Sharma" want to change their city from Delhi to Hyderabad. <br>
 the existing city name need to be change in multiple rows.
-to understand to refer column "customer_city", row - (2, 5, 21)
+to understand to refer column "customer_city", row - (2, 5, 21)  
+forgetting to update any one row cause data inconsistency.
 
 ### Deletion Anamoly:
 refer row - 16  
@@ -38,7 +39,7 @@ what is it actually does is ?
 - This reduces the data storage cost.
 - Removes data redudancy/Insertion/updation/deletion
 - ease of drawing insights from the data
-- ease of viewing only necessay data <br>
+- ease of viewing only necessary data <br>
 
 How it does? <br>
 In Normalization every table is connect to other table by a common attribute/column in the table. <br>
