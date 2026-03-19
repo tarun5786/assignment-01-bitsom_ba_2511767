@@ -1,0 +1,41 @@
+[
+  {
+    "Brand": "Apple",
+    "Name": "MacBook Neo",
+    "Screen Size": "13 Inches",
+    "Colour": "Silver",
+    "Specifications": {
+      "CPU Model": "Apple A18 Pro",
+      "Battery Life": "16 hrs",
+      "RAM Size": "8 GB",
+      "OS": "Mac OS",
+      "Hard Disk": "SSD"
+    },
+    "Category": "Electronics",
+    "Price": 77900
+  },
+  {
+    "Brand": "Tata Sampann",
+    "Name": "Chilli Powder",
+    "Flavour": "Chilly",
+    "Quantity": "500 Grams",
+    "Expiry": "2024-05-21",
+    "Category": "Groceries",
+    "Price": 500
+  },
+  {
+    "Brand": "Rare Rabbit",
+    "Name": "Men's Rory Light Blue Cotton Plain Fit Jeans",
+    "Material type": "Cotton",
+    "Length": "Standard Length",
+    "Style": "Classic",
+    "Size": [
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "Category": "Clothing",
+    "Price": 2829
+  }
+]
