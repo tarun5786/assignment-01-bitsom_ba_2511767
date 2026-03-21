@@ -1,5 +1,6 @@
 [
   {
+    "Product_id": "E001",
     "Brand": "Apple",
     "Name": "MacBook Neo",
     "Screen Size": "13 Inches",
@@ -12,18 +13,22 @@
       "Hard Disk": "SSD"
     },
     "Category": "Electronics",
-    "Price": 77900
+    "Price": 77900,
+    "Stock": 15
   },
   {
+    "Product_id": "G001",
     "Brand": "Tata Sampann",
     "Name": "Chilli Powder",
     "Flavour": "Chilly",
     "Quantity": "500 Grams",
     "Expiry": "2024-05-21",
     "Category": "Groceries",
-    "Price": 500
+    "Price": 500,
+    "Stock": 20
   },
   {
+    "Product_id": "C001",
     "Brand": "Rare Rabbit",
     "Name": "Men's Rory Light Blue Cotton Plain Fit Jeans",
     "Material type": "Cotton",
@@ -36,6 +41,7 @@
       "XXL"
     ],
     "Category": "Clothing",
-    "Price": 2829
+    "Price": 2829,
+    "Stock": 25
   }
 ]
