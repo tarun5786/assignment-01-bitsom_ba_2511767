@@ -3,6 +3,7 @@ use("ecommerce");
 // OP1: insertMany() — insert all 3 documents from sample_documents.json
 db.sample_documents.insertMany(
     [{
+    "Product_id": "E001",
     "Brand": "Apple",
     "Name": "MacBook Neo",
     "Screen Size": "13 Inches",
@@ -18,6 +19,7 @@ db.sample_documents.insertMany(
     "Price": 77900,
     },
     {
+        "Product_id": "G001",
         "Brand": "Tata Sampann",
         "Name": "Chilli Powder",
         "Flavour": "Chilly",
@@ -29,6 +31,7 @@ db.sample_documents.insertMany(
 
     },
     {
+        "Product_id": "C001",
         "Brand": "Rare Rabbit",
         "Name": "Men's Rory Light Blue Cotton Plain Baggy Fit Jeans",
         "Material type": "Cotton",
@@ -43,4 +46,21 @@ db.sample_documents.insertMany(
 
 
 // OP2: find() — retrieve all Electronics products with price > 20000
-db.sample_documents.find({}, [{ Category: "Electronics" }, { Price: { $gt: 20000 } }]);
+db.sample_documents.find({ Category: "Electronics" }, { Price: { $gt: 20000 });
+
+// OP3: find() — retrieve all Groceries expiring before 2025-01-01
+db.sample_documents.find({ Category: "Groceries", "Use By": {$lt: "2025-01-01"}});
+
+// OP4: updateOne() — add a "discount_percent" field to a specific product
+db.sample_documents.updateOne( {"Product_id": "E001"}, { $set: {"Discount_percentage": 10}});
+
+// OP5: createIndex() — create an index on category field and explain why
+db.sample_documents.createIndex({ Category: 1})
+
+/*
+when a search query ran in MongoDB search through every document in the collection to find matching results.
+working with large data this increases the response time.
+if you have an appropriate index, then MongoDB can jump directly to a subset of matching documents instead of searching all of them.
+So, by indexing Category can pull out results faster since, Ecommerce user find products by category.
+*/
+    
